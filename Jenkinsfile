@@ -4,7 +4,10 @@ pipeline{
  stages{
   stage('Build'){
    steps{
-    sh java -version
+    sh'''
+    java -version
+    echo "Hello"
+    '''
    }
   }
  }
